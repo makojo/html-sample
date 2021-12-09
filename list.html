@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リストサンプル</title>
+    <style type="text/css">
+        .noListStyle
+        {}
+        .hasMarker
+        {list-style: disc;}
+        .noMarker
+        {list-style-type: none;}
+        .bgMarker
+        {
+            list-style-type: none;
+        }
+        .bgMarker li
+        {
+            padding-left: 1.5em;
+            margin-left: -1.5em;
+            background-image: url('images/bg-marker.png');
+            background-repeat: no-repeat;
+            background-position: -4px, -4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>リストサンプル</h1>
+    <section>
+        <h2>行頭記号あり(明示的な指定なし)</h2>
+        <ul class="noListStyle">
+            <li>あいうえお</li>
+            <li>かきくけこ</li>
+            <li>さしすせそ</li>
+        </ul>
+    </section>    
+    <section>
+    <h2>行頭記号あり(明示的な指定あり)</h2>
+    <ul class="hasMarker">
+        <li>あいうえお</li>
+        <li>かきくけこ</li>
+        <li>さしすせそ</li>
+    </ul>
+    </section>
+    <section>
+    <h2>行頭記号なし</h2>
+    <ul class="noMarker">
+        <li>あいうえお</li>
+        <li>かきくけこ</li>
+        <li>さしすせそ</li>
+    </ul>
+    </section>
+    <section>
+    <h2>行頭記号を背景画像で表現</h2>
+    <ul class="bgMarker">
+        <li>あいうえお</li>
+        <li>かきくけこ</li>
+        <li>さしすせそ</li>
+    </ul>
+    </section>
+</body>
+</html>
