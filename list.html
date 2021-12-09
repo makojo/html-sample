@@ -11,6 +11,10 @@
         {}
         .hasMarker
         {list-style: disc;}
+        .hasInside
+        {list-style: inside;}
+        .hasSquare
+        {list-style: square;}
         .noMarker
         {list-style-type: none;}
         .bgMarker
@@ -25,6 +29,14 @@
             background-repeat: no-repeat;
             background-position: -4px, -4px;
         }
+        .georgianInside
+        {
+            list-style: georgian inside url('images/bg-marker.png');
+        }
+        .georgianOutside
+        {
+            list-style: georgian outside url('images/bg-marker.png');
+        }
     </style>
 </head>
 <body>
@@ -36,7 +48,7 @@
             <li>かきくけこ</li>
             <li>さしすせそ</li>
         </ul>
-    </section>    
+    </section>
     <section>
     <h2>行頭記号あり(明示的な指定あり)</h2>
     <ul class="hasMarker">
@@ -45,6 +57,23 @@
         <li>さしすせそ</li>
     </ul>
     </section>
+    <section>
+        <h2>行頭記号あり(inside)</h2>
+        <ul class="hasInside">
+            <li>あいうえお</li>
+            <li>かきくけこ</li>
+            <li>さしすせそ</li>
+        </ul>
+    </section>
+    <section>
+        <h2>行頭記号あり(square)</h2>
+        <ul class="hasSquare">
+            <li>あいうえお</li>
+            <li>かきくけこ</li>
+            <li>さしすせそ</li>
+        </ul>
+        </section>
+
     <section>
     <h2>行頭記号なし</h2>
     <ul class="noMarker">
@@ -61,5 +90,21 @@
         <li>さしすせそ</li>
     </ul>
     </section>
+    <section>
+        <h2>行頭記号を画像で表現(georgian inside)</h2>
+        <ul class="georgianInside">
+            <li>あいうえお</li>
+            <li>かきくけこ</li>
+            <li>さしすせそ</li>
+        </ul>
+    </section>
+    <section>
+        <h2>行頭記号を画像で表現(georgian outside)</h2>
+        <ul class="georgianOutside">
+            <li>あいうえお</li>
+            <li>かきくけこ</li>
+            <li>さしすせそ</li>
+        </ul>
+        </section>
 </body>
 </html>
