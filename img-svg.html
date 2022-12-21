@@ -10,12 +10,20 @@
 <body>
     <h1>img要素でsvgをマークアップ</h1>
     <section>
-        <h2>role="img"あり</h2>
-        <img src="images/crystal_of_snow.svg" width="256" role="img" alt="雪の結晶">
+        <h2>role="img"あり img</h2>
+        <img src="images/crystal_of_snow.svg" width="256" role="img" alt="role=img あり img 雪の結晶">
     </section>
     <section>
-        <h2>role="img"なし</h2>
-        <img src="images/crystal_of_snow.svg" width="256" alt="雪の結晶">
+        <h2>role="img"なし img</h2>
+        <img src="images/crystal_of_snow.svg" width="256" alt="role=img なし img 雪の結晶">
+    </section>
+    <section>
+        <h2>role="img"あり object</h2>
+        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="256" role="img" aria-label="role=img あり object 雪の結晶"></object>
+    </section>
+    <section>
+        <h2>role="img"なし object</h2>
+        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="256" aria-label="role=img あり object 雪の結晶"></object>
     </section>
 </body>
 </html>
