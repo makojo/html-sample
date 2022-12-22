@@ -2,32 +2,41 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>img要素でsvgをマークアップ</title>
 
 </head>
+
+ご指摘ありがとうございます! 本来、リリース前に確認・修正することができておらずお恥ずかしいです…。
+課題は認識していて現在対応中なので、また気づいた頃があれば遠慮なくコメントください!
+
 <body>
     <h1>img要素でsvgをマークアップ</h1>
     <section>
         <h2>role="img"あり img</h2>
-        <img src="images/crystal_of_snow.svg" width="128" role="img" alt="role=img あり img 雪の結晶">
+        <img src="images/crystal_of_snow.svg" width="128" role="img" alt="雪の結晶">
     </section>
     <section>
         <h2>role="img"なし img</h2>
-        <img src="images/crystal_of_snow.svg" width="128" alt="role=img なし img 雪の結晶">
+        <img src="images/crystal_of_snow.svg" width="128" alt="role=雪の結晶">
     </section>
+    <h1>object要素でsvgをマークアップ</h1>
     <section>
         <h2>role="img"あり object</h2>
-        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="128" role="img" aria-label="role=img あり object 雪の結晶"></object>
+        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="128" role="img" aria-label="雪の結晶"></object>
     </section>
     <section>
         <h2>role="img"なし object</h2>
-        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="128" aria-label="role=img あり object 雪の結晶"></object>
+        <object type="image/svg+xml" data="images/crystal_of_snow.svg" width="128" aria-label="雪の結晶"></object>
+    </section>
+    <h1>img要素でpngをマークアップ</h1>
+    <section>
+        <h2>role="img"あり img</h2>
+        <img src="images/crystal_of_snow.png" width="128" role="img" alt="雪の結晶">
     </section>
     <section>
-        <h2>role="img"あり img png</h2>
-        <img src="images/crystal_of_snow.png" width="128" role="img" alt="role=img あり img png 雪の結晶">
+        <h2>role="img"なし img</h2>
+        <img src="images/crystal_of_snow.png" width="128" alt="雪の結晶">
     </section>
 </body>
 </html>
